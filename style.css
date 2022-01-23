@@ -1,0 +1,29 @@
+.hidden{
+    display: none;  /*어떤 요소에게든 이 classnames를 주면, 그 요소를 숨김.*/
+}
+
+html, body{
+    margin:0;
+    padding: 0;
+}
+h1,p{
+    margin:0;
+}
+img{
+    background-size: cover;
+    background-position: center center;
+    width:100vw;
+    height: 100vh;
+    z-index: -1; /*사진이 뒤로, 텍스트 앞으로*/
+}
+
+#clock,#greeting,#quote,#weather{ 
+    color: blueviolet;
+    text-decoration-line: underline;
+    text-align: center;
+}
+
+#login-form, #todo-form{
+    text-align: center;
+
+}
