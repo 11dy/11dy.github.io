@@ -12,14 +12,14 @@ function onGeoOk(position){  // js가 유저의 위치를 전달
         const weather = document.querySelector("#weather span:first-child"); // span에서 날씨를 줌
         const city = document.querySelector("#weather span:last-child"); // 도시 두번째로 표시 
         city.innerText = data.name;
-        weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;  // 여기 만들고 html에 div 태그 안에 id =weather생성. 그 후에 name과 weather이 들어갈 span 2개 생성
+        weather.innerText = `${data.weather[0].main} / ${data.main.temp}℃`;  // 여기 만들고 html에 div 태그 안에 id =weather생성. 그 후에 name과 weather이 들어갈 span 2개 생성
         // >날씨 이름 / data.main.temp
     } ); // js가 url을 부름 
 }
 function onGeoError(){
     alert("Can't find you! No weather for you");
 } 
-
+ 
 
 
 

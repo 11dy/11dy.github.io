@@ -59,11 +59,14 @@ img{
     color: white;
     text-decoration-line: none;
     
-    text-align:center;
+    
     font-size: 25px;
     font-family: 'Sedgwick Ave', cursive;
     margin-top: 30px;
-    font-family: 'Poiret One', cursive
+    font-family: 'Poiret One', cursive;
+    font-weight: bold; 
+
+    text-align:  center;
 
     
 }
@@ -85,10 +88,12 @@ img{
 
 #nameinput{  /*이름 입력창*/
     display:inline-block;
+    
     border: 2px solid white; /*테두리 하얀색의 직사각형*/
     border-radius: 10px; /*20px만큼 둥글게 깎이도록*/
     padding: 5px 10px; /*위아래 10 좌우 20*/
     font-weight: bold; 
+    margin-top: 30px;
    
 }
 
@@ -98,8 +103,21 @@ img{
     border-radius: 10px; /*20px만큼 둥글게 깎이도록*/
     padding: 5px 10px; /*위아래 10 좌우 20*/
     font-weight: bold; 
+    margin-bottom:35px; 
    
     
 }
 
+#submit{  /*로그인 버튼 없애기*/
+    display: none;
+}
+
+#todo-list{  /*list의 모양 설정*/
+    display:inline-block;
+    border: 2px solid rgb(143, 180, 74);
+    border-radius: 10px; 
+    padding: 5px 150px;
+    
+    
+}
 
