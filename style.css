@@ -11,19 +11,95 @@ h1,p{
 }
 img{
     background-size: cover;
-    background-position: center center;
-    width:100vw;
-    height: 100vh;
+    background-position: center center;  /*항상 중앙*/
+    width:100vw; /*항상 웹브라우저에 꽉차는 크기로 설정*/
+    height: 100vh;/*항상 웹브라우저에 꽉차는 크기로 설정*/ 
     z-index: -1; /*사진이 뒤로, 텍스트 앞으로*/
 }
+#main{  /*body가 중앙에 위치하도록*/
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width:100%;
 
-#clock,#greeting,#quote,#weather{ 
-    color: blueviolet;
+}
+
+#clock{ 
+    color: white;
     text-decoration-line: underline;
+    /*position: absolute;/*세로 방향에서 중앙 정렬, 절대적인 위치 설정
+    width: 100%;/*이게 없으면 자기 요소의 크기만 가진다.
+    top: 100%;
+    transform: translateY(-20%);*/
+    text-align: center;  /*가로 방향에서 중앙 정렬*/
+
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 70px;
+}
+#greeting{
+    color: white;
+    text-decoration-line: underline;
+   
     text-align: center;
+
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+#quote{
+    color: white;
+    text-decoration-line: underline;
+   
+   
+    text-align: center;
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 30px; 
+}
+#weather{
+    color: white;
+    text-decoration-line: none;
+    
+    text-align:center;
+    font-size: 25px;
+    font-family: 'Sedgwick Ave', cursive;
+    margin-top: 30px;
+    font-family: 'Poiret One', cursive
+
+    
 }
 
 #login-form, #todo-form{
+    /*둥근 버튼 만들기*/
+    /*display:inline-block;
+    border: 2px solid white; /*테두리 하얀색의 직사각형/
+    border-radius: 10px; /*20px만큼 둥글게 깎이도록/
+    padding: 5px 10px; /*위아래 10 좌우 20/
+    font-weight: bold; */
+
     text-align: center;
+    font-size: 25px;
+    font-family: 'Sedgwick Ave', cursive;
+    
 
 }
+
+#nameinput{  /*이름 입력창*/
+    display:inline-block;
+    border: 2px solid white; /*테두리 하얀색의 직사각형*/
+    border-radius: 10px; /*20px만큼 둥글게 깎이도록*/
+    padding: 5px 10px; /*위아래 10 좌우 20*/
+    font-weight: bold; 
+   
+}
+
+#todoinput{  /*투두리스트 입력창*/
+    display:inline-block;
+    border: 2px solid white; /*테두리 하얀색의 직사각형*/
+    border-radius: 10px; /*20px만큼 둥글게 깎이도록*/
+    padding: 5px 10px; /*위아래 10 좌우 20*/
+    font-weight: bold; 
+   
+    
+}
+
+

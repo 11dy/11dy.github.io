@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Sedgwick+Ave&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> 
     <title>Momentum App</title>
 </head>
@@ -12,19 +15,24 @@
      <h1 id="clock"></h1>
       <form class="hidden" id ="login-form" > 
        <input 
+       id= "nameinput" 
        required
        maxlength="15"
        type = "text" 
-       placeholder="what is your name?"/>
-       <input type="submit" value="Log In" />
+      placeholder="what is your name?"/>
+       <input type="submit"  value="Log In"/>
       </form> 
     <h2 id="greeting" ></h2>
     <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and pres Enter" required /> <!--필수로 하겠다.--> 
+        <input
+        id="todoinput"
+         type="text" 
+         placeholder="Write a To Do and pres Enter" 
+         required /> <!--필수로 하겠다.--> 
     </form>
     <ul id="todo-list"></ul> <!--js로 li를 추가하기 때문에 아무것도 안적어도 됨. 비어있는 리스트-->
     <div id="quote">
-        <span></span> <!--명언의 위치--><br></br>
+        <span></span> <!--명언의 위치--><br>
         <span></span>  <!--작가의 위치-->
     </div>
     <div id="weather">
